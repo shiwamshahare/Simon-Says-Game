@@ -13,9 +13,19 @@ document.addEventListener("keypress", function() {  // to start the game
     if(started == false) {    // game is not started untill any key was pressed
         started = true;
         levelUp();
+    }; 
+});
+
+//for touch Screen
+document.addEventListener("touchstart", function() {  // to start the game 
+    if(started == false) {                          // game is not started untill any key was pressed
+        console.log("game is started");
+        started = true;
+        levelUp();
     };
     
 });
+ 
 
 // for flash the button
 function gameFlash(btn) {
